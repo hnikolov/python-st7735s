@@ -8,7 +8,7 @@ The code is compatible with Python 3.5 and up, and heavily inspired by [this rep
 
 # Performances
 
-On my Raspberry Pi Zero, the package reaches 5 FPS while doing refresh of the complete display. Performances should be better if I implement like a framebuffer and only update the modified pixels, but honestly 5FPS is all I need for now.
+On my Raspberry Pi Zero, the package reaches ~10 FPS while doing refresh of the complete display. Performances scales when using partial update. For example, with images of 64x64 pixels, the package reaches 30 images per second.
 
 # Requirements
 
